@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+/* Layout */
+@media (max-width: 375px) {
+    /* CSS rules for mobile layout (375px) */
+  }
+  
+  @media (min-width: 376px) and (max-width: 1440px) {
+    /* CSS rules for responsive layout between 376px and 1440px */
+  }
+  
+  @media (min-width: 1441px) {
+    /* CSS rules for desktop layout (1441px and above) */
+  }
+  
+  /* Colors */
+  :root {
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+  }
+  
+  /* Typography */
+  body {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: #F4D04E;
+  }
+ 
+.container{
+box-sizing: border-box;
+padding: 24px;
+gap: 24px;
+position: absolute;
+width: 384px;
+height: 522px;
+left: calc(50% - 384px/2);
+top: calc(50% - 522px/2 - 0.5px);
+background: #FFFFFF;
+border: 1px solid #111111;
+box-shadow: 8px 8px 0px #000000;
+border-radius: 20px;
+}
+.author{
+    display: flex;
+    align-items: center;  
+}
+#authorImg{
+width: 32px;
+height: 32px;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.authorName{
+width: 85px;
+height: 21px;
+padding-left: 20px;
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 150%;
+color: #111111;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.content{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 336px;
+height: 194px;
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 8px;
+    
+    width: 82px;
+    height: 29px;
+    
+    background: #F4D04E;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+    /* Learning */
+    
+    width: 58px;
+    height: 21px;
+    
+    /* Body S (Bold) */
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    color: #111111;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    }
+
+.publish{
+    width: 143px;
+    height: 21px;
+    /* Body S (Regular) */
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    color: #111111;
+        /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    }
+
+
+
+.title{width: 336px;
+    height: 36px;
+    
+    /* Heading */
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    
+    color: #111111;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+    }
+.title:hover{
+       /* title */
+
+width: 336px;
+height: 36px;
+
+/* Heading */
+font-family: 'Figtree';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+
+color: #F4D04E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 2;
+}
+
+
+.description {
+    width: 336px;
+    height: 72px;
+    
+    /* Body M */
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    color: #7F7F7F;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+
+      .blogimage {
+        width: 336px;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        position: relative;
+      }
+      .attribution { font-size: 11px; text-align: center;bottom: 0;position: fixed;}
+      .attribution a { color: hsl(228, 45%, 44%); }
